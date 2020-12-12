@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toba language website">
+    <meta name="author" content="Damien Culot">
+
+    <title>Toba - Toba programming language</title>
+
+    <link rel="shortcut icon" href="assets/images/SLogo21.png">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css" title="main">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/download.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/scrollup.css">
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scrollup.js"></script>
+
+
+</head>
+
+<body class="home">
+
+    <a id="ScrollTopBtn" class="btn btn-info btn-lg " href="#"><i class="fa fa fa-arrow-up"></i></a>
+
+
+    <div class="navbar  navbar-expand-lg navbar-inverse navbar-fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt=""></a>
+
+        <p id="tobasite-version" class="nav-item version"></p>
+
+        <div class="container">
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarResponsive" style="">
+                <ul class="navbar-nav">
+
+
+                </ul>
+            </div>
+
+            <a href="https://github.com/TobaMan/TobaLang/pulls" class="nav-item nav-link">Pull requests</a>
+            <a href="https://github.com/TobaMan/TobaLang/issues" class="nav-item nav-link">Issues</a>
+
+            <div class="dropdown">
+                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Themes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Cerulean">Cerulean</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Cosmo">Cosmo</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Cyborg">Cyborg</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Darkly">Darkly</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Flatly">Flatly</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Literia">Literia</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Lux">Lux</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Materia">Materia</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Minty">Minty</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Sandstone">Sandstone</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Simplex">Simplex</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Sketchy">Sketchy</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Slate">Slate</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Solar">Solar</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Spacelab">Spacelab</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="Superhero">Superhero</a>
+                    <a href="#" class="dropdown-item change-style-menu-item" rel="United">United</a>
+                </div>
+            </div>
+            <a class="btn btn-outline-info" style="padding-left:10px" href="documentation.html">DOCUMENTATION</a>
+
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header id="head">
+        <div class="container">
+
+            <h1 class="text-center lead"><strong>TOBA</strong>
+                <small>PROGRAMMING LANGUAGE</small>
+            </h1>
+            <h4 class="lead text-center font-italic"><span style="color:#11a55d;font-weight: bold">optimize</span>( _productivity ) </h4>
+            <a class="btn btn-default btn-lg" role="button" style="margin-top: 20px" href="#more-info"><i class="fa fa-ellipsis-h"></i></a>
+            <a class="btn btn-default btn-lg" role="button" style="margin-top: 20px" href="#getting-started">GETTING STARTED</a>
+            <a class="btn btn-info btn-lg" role="button" style="margin-top: 20px" href="#download">DOWNLOAD TOBA</a>
+
+        </div>
+
+        <!--        <i class="fa fa-caret-down"></i>-->
+
+    </header>
+    <!-- /Header -->
+
+    <!-- Intro -->
+    <div class="container text-center">
+        <br> <br>
+        <h2 id="more-info" class="thin">Portability and advanced built-in functions</h2>
+        <p class="text-muted"><u>The source code involved in Toba is only dependent on the standard libraries of the C language</u>. The compilation performs both the on-the-fly calculation of constants and the construction of a machine code optimized for the portions of the program concerned by the fast algorithmic processing. &nbsp;</p>
+        <p class="text-muted">In order to facilitate the learning of the language and to improve the speed of development, the builtins functions are carefully realized in order to obtain the minimum of input parameters while trying to cover the totality of the associated need. A single builtin function must be able to act on a maximum number of data types in order to be as versatile as possible and thus avoid endless searches in the documentation. <u>A sufficient number of standardized internal functions will allow the developer to focus more on the goal than on how to achieve it.</u></p>
+    </div>
+    <!-- /Intro-->
+
+
+    <!-- Highlights - jumbotron -->
+    <div class="jumbotron top-space">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 highlight">
+                    <div class="h-caption">
+                        <h4><i class="fa fa fa-flash fa-5 red"></i>Efficient</h4>
+                    </div>
+                    <div class="h-body text-center">
+                        <p>Toba is an interpreted programming language that runs smoothly. The next versions will make it possible to obtain a speed close to the low-level languages associated with the use of the graphics card. Working progress ... </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 highlight">
+                    <div class="h-caption">
+                        <h4><i class="fa fa fa-cogs fa-5"></i>Cross compiler</h4>
+                    </div>
+                    <div class="h-body text-center">
+                        <p>Toba makes it easy to create an executable optimized for the host system or for a target system.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 highlight">
+                    <div class="h-caption">
+                        <h4><i class="fa fa-balance-scale fa-5"></i>Light weight</h4>
+                    </div>
+                    <div class="h-body text-center">
+                        <p>The core of Toba is an executable file that does not exceed 2 megabytes.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 highlight">
+                    <div class="h-caption">
+                        <h4><i class="fa fa-users fa-5"></i>Customizable language</h4>
+                    </div>
+                    <div class="h-body text-center">
+                        <p>Toba is a general-purpose programming language that could at the same time specialize according to your requests. Author's support.</p>
+                    </div>
+                </div>
+            </div> <!-- /row  -->
+
+        </div>
+    </div>
+    <!-- /Highlights -->
+
+    <!-- container -->
+    <!--    <img class="gstartimg" src="assets/images/gettingstarted.jpg" alt="">-->
+    <div class="startinfo container">
+
+        <h2 id="getting-started" class="text-center top-space">Getting Started</h2>
+        <br>
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h4><span class="badge badge-info">1</span> Install Toba on your computer</h4>
+
+                <p style="text-align: justify;">Download the installation program. Run it. Follow the installer&#39;s instructions. Once the installation is complete, a new Toba directory will be created on your computer in the location you have chosen.&nbsp;</p>
+                <p style="text-align: justify;">This Toba directory contains the binary of the language used to execute the code (Toba.exe). This directory also contains a directory named &quot;modules&quot; containing several directories corresponding to the standard libraries or the Toba libraries you have created (ex: libMyLib).</p>
+                <p style="text-align: justify;">These libraries contain Toba files. These source files are recognized by your system because they have the extension &quot;.to&quot; and are executable by double-clicking on them.</p>
+                <p><br></p>
+                <p><br></p>
+
+            </li>
+            <li class="list-group-item">
+                <h4><span class="badge badge-info">2</span> Create your first script</h4>
+            </li>
+            <li class="list-group-item">
+                <h4><span class="badge badge-info">3</span> Run the code</h4>
+
+                <p>To obtain more sample code, you can browse the documentation as well as the contents of the &quot;Tests&quot; folder at the root of the Toba executable. &nbsp;</p>
+            </li>
+        </ul>
+
+
+
+    </div> <!-- /container -->
+
+    <div id="download" class="jumbotron top-space">
+        <div class="container">
+
+            <p>This language is available under a free and permissive license, but needs <a class="btn btn-info btn-sm" role="button" href="https://www.paypal.com/donate?hosted_button_id=99KGC8DTE9HWY">financial support</a> to sustain its continued improvements. In addition to maintenance and stability there are many desirable features yet to be added. If your company is using Toba, please consider reaching out.</p>
+            <br>
+
+
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Version
+                </button>
+                <div id="version-list" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <!--
+                    <a class="dropdown-item change-version" rel="1.0.0" href="#!">1.0.0</a>
+                    <a class="dropdown-item change-version" rel="1.0.1" href="#!">1.0.1</a>
+-->
+                </div>
+            </div>
+
+
+            <div class="list-group">
+
+                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <i class="fa fa fa-windows fa-3x"></i>
+                        <span class="df download-vname"></span>
+                        <span class="dfn">Windows setup</span>
+                        <span id="windowsnote" style="margin-left: auto;margin-right: auto;width: 60%"></span>
+
+                    </div>
+
+                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                        <button class="btn btn-outline-info active" type="button">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 32bits
+                        </button>
+                        <button class="btn btn-outline-info" type="button">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 64bits
+                        </button>
+                    </div>
+                </a>
+
+                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+                    <div class="d-flex w-100 justify-content-between">
+                        <i class="fa fa fa-linux fa-3x"></i>
+                        <span class="df download-vname"></span>
+                        <span class="dfn">Linux setup</span>
+                        <span id="linuxnote" style="margin-left: auto;margin-right: auto;width: 60%"></span>
+
+                    </div>
+
+                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                        <button class="btn btn-outline-info active" type="button">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 32bits
+                        </button>
+                        <button class="btn btn-outline-info" type="button">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 64bits
+                        </button>
+                    </div>
+                </a>
+
+
+
+                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+                    <div class="d-flex w-100 justify-content-between">
+                        <i class="fa fa fa-apple fa-3x"></i>
+                        <span class="df download-vname"></span>
+                        <span class="dfn">Apple setup</span>
+                        <span id="applenote" style="margin-left: auto;margin-right: auto;width: 60%"></span>
+
+                    </div>
+
+                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+                        <button class="btn btn-outline-info active" type="button">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 32bits
+                        </button>
+                        <button class="btn btn-outline-info" type="button">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 64bits
+                        </button>
+                    </div>
+                </a>
+
+                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between" class="download linux btn btn-primary btn-large  disabled">
+                        <i class="fa fa fa-file-text fa-3x"></i>
+                        <span class="df download-vname"></span>
+                        <span class="dfn">Release Note</span>
+                        <span id="releasenote" style="margin-left: auto;margin-right: auto;width: 60%"></span>
+
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Social links. @TODO: replace by link/instructions in template -->
+    <section id="social">
+        <div class="container">
+            <div class="wrapper clearfix">
+                <!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style">
+                    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                    <a class="addthis_button_tweet"></a>
+                    <a class="addthis_button_linkedin_counter"></a>
+                    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+                </div>
+                <!-- AddThis Button END -->
+            </div>
+        </div>
+    </section>
+    <!-- /social links -->
+
+
+    <footer id="footer" class="top-space">
+
+        <!--
+        <div class="footer1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 widget">
+                        <h3 class="widget-title">Contact</h3>
+                        <div class="widget-body">
+                            <p>+234 23 9873237<br>
+                                <a href="mailto:#">some.email@somewhere.com</a><br>
+                                <br>
+                                234 Hidden Pond Road, Ashland City, TN 37015
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 widget">
+                        <h3 class="widget-title">Follow me</h3>
+                        <div class="widget-body">
+                            <p class="follow-me-icons">
+                                <a href=""><i class="fa fa-twitter fa-2"></i></a>
+                                <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+                                <a href=""><i class="fa fa-github fa-2"></i></a>
+                                <a href=""><i class="fa fa-facebook fa-2"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 widget">
+                        <h3 class="widget-title">Text widget</h3>
+                        <div class="widget-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+                            <p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+-->
+
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 widget">
+                        <div class="widget-body">
+                            <p class="simplenav">
+                                <b><a href="#">Home</a></b> |
+                                <a href="https://github.com/TobaMan/TobaLang/pulls">Pull requests</a> |
+                                <a href="https://github.com/TobaMan/TobaLang/issues">Issues</a> |
+                                <a href="Documentation.html">Documentation</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 widget">
+                        <div class="widget-body">
+                            <p class="text-right">
+                                Copyright &copy; 2020, Damien Culot.
+                                <img src="assets/images/by-nc-nd.eu.png" style="width:80px;margin-left:10px" alt="">
+                            </p>
+                        </div>
+                    </div>
+
+                </div> <!-- /row of widgets -->
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

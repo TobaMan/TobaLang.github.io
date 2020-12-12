@@ -1,0 +1,65 @@
+/*
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*/
+
+/*
+* {
+    font-family: 'Open Sans', 'sans-serif' src:url(../fonts/OpenSans-Regular.ttf) format("truetype");
+}
+*/
+
+
+li {
+/*    display: inline-block;*/
+    position: relative;
+    margin: 10px;
+}
+
+.smallimbut {
+    width: 150px;
+    height: 55px;
+    float: left;
+    position: relative;
+    color: #fff;
+}
+
+.smallimbut > .fa {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.download {
+    width: 200px;
+    height: 75px;
+    float: left;
+    position: relative;
+    color: #fff;
+}
+
+.download > .fa {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.df,
+.dfn {
+    position: absolute;
+    left: 70px;
+}
+
+.df {
+    top: 20px;
+    font-size: .68em;
+}
+
+.dfn {
+    top: 33px;
+    font-size: 1.08em;
+}
