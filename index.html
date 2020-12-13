@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -194,7 +194,7 @@
 
 
             <div class="dropdown">
-                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button id="version-info" class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Version
                 </button>
                 <div id="version-list" class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -208,7 +208,7 @@
 
             <div class="list-group">
 
-                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+                <a id="win-download" href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
                         <i class="fa fa fa-windows fa-3x"></i>
                         <span class="df download-vname"></span>
@@ -218,16 +218,16 @@
                     </div>
 
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                        <button class="btn btn-outline-info active" type="button">
-                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 32bits
+                        <button id="win-arch32" class="sel-arch btn btn-outline-info active" type="button">
+                            <input type="radio" name="options" autocomplete="off"> 32bits
                         </button>
-                        <button class="btn btn-outline-info" type="button">
-                            <input type="radio" name="options" id="option2" autocomplete="off"> 64bits
+                        <button id="win-arch64" class="sel-arch btn btn-outline-info" type="button">
+                            <input type="radio" name="options" autocomplete="off"> 64bits
                         </button>
                     </div>
                 </a>
 
-                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+                <a id="lin-download" href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
                         <i class="fa fa fa-linux fa-3x"></i>
                         <span class="df download-vname"></span>
@@ -237,18 +237,16 @@
                     </div>
 
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                        <button class="btn btn-outline-info active" type="button">
-                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 32bits
+                        <button id="lin-arch32" class="sel-arch btn btn-outline-info active" type="button">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> 32bits
                         </button>
-                        <button class="btn btn-outline-info" type="button">
-                            <input type="radio" name="options" id="option2" autocomplete="off"> 64bits
+                        <button id="lin-arch64" class="sel-arch btn btn-outline-info" type="button">
+                            <input type="radio" name="options" autocomplete="off"> 64bits
                         </button>
                     </div>
                 </a>
 
-
-
-                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start disabled">
+                <a id="mac-download" href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-between">
                         <i class="fa fa fa-apple fa-3x"></i>
                         <span class="df download-vname"></span>
@@ -258,17 +256,17 @@
                     </div>
 
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-                        <button class="btn btn-outline-info active" type="button">
-                            <input type="radio" name="options" id="option1" autocomplete="off" checked> 32bits
+                        <button id="mac-arch32" class="sel-arch btn btn-outline-info active" type="button">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> 32bits
                         </button>
-                        <button class="btn btn-outline-info" type="button">
-                            <input type="radio" name="options" id="option2" autocomplete="off"> 64bits
+                        <button id="mac-arch64" class="sel-arch btn btn-outline-info" type="button">
+                            <input type="radio" name="options" autocomplete="off"> 64bits
                         </button>
                     </div>
                 </a>
 
                 <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-100 justify-content-between" class="download linux btn btn-primary btn-large  disabled">
+                    <div class="d-flex w-100 justify-content-between" class="download linux btn btn-primary btn-large">
                         <i class="fa fa fa-file-text fa-3x"></i>
                         <span class="df download-vname"></span>
                         <span class="dfn">Release Note</span>
