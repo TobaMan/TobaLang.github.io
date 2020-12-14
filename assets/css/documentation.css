@@ -6,12 +6,19 @@ p {
 tr {
     /*    font-weight: bold;*/
     filter: invert(0.70);
+    transition: all .4s ease-in;
     /*    border-color: var(--primary);*/
+    /*    transform-origin: 0 0*/
 }
+
 
 tr:hover {
 
     filter: invert(1);
+    font-weight: bold;
+    transition: all .4s ease-in;
+    /*    text-transform: uppercase;*/
+
 }
 
 
