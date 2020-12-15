@@ -41,6 +41,7 @@ td {
 body {
     margin-left: 30%;
     width: 65%;
+    /*    -webkit-filter: "blur(4px)"*/
 }
 
 html {

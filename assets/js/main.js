@@ -159,12 +159,15 @@ function InitDocToc() {
     });
 }
 
+function IsDocPage() {
+    var winame = document.location.href.match(/[^\/]+$/)[0]
+    return winame.includes("documentation");
+}
+
 function AddDocNewItem(newlist) {
     var splitter = "::";
     var extra = '<span style="margin-left:4px" class="badge badge-primary">New</span>';
-    var winame = document.location.href.match(/[^\/]+$/)[0]
-    if (!winame.includes("documentation")) {
-        InitDocToc();
+    if (!IsDocPage()) {
         return;
     }
     $("h1, h2").each(function () {
@@ -187,8 +190,9 @@ $(document).ready(function () {
     if (theme) {
         set_theme(theme);
     } else {
-        set_theme("assets/css/bootstrap.css");
+        set_theme("assets/css/bootstrap.min.Slate.css");
     }
+
 
     jQuery.get("assets/data/data", function (datav) {
         data = JSON.parse(datav);
@@ -198,6 +202,7 @@ $(document).ready(function () {
         InitCurrentVersion();
         BuildDownloadVersion();
         AddDocNewItem(newlist);
+
     });
 
 });
