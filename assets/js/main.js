@@ -112,8 +112,9 @@ function BuildDownloadSetup(button, os, arch) {
         if (arch === 32) architecture = "x86";
         if (arch === 64) architecture = "x64";
     }
-    //var base = "https://github.com/TobaMan/TobaLang/releases/download/";
-    var base = "assets/data/setup/";
+    //https://github.com/TobaMan/TobaLang/releases/download/100/Toba_100_x64_Setup.exe
+    var base = "https://github.com/TobaMan/TobaLang/releases/download/";
+    //var base = "assets/data/setup/";
     var filename = "Toba_" + version + "_" + architecture + "_Setup" + ext
     var download = base + version + "/" + filename;
     $(button).attr('onclick', "window.location.href='" + download + "';");
