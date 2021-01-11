@@ -1,0 +1,28 @@
+//This sample shows a possible use of objects for database management
+
+obj:UIConfData(){
+
+	self.confile = "config.dat"
+	self.theme = 0
+	self.fontype = 0
+	self.fontsize = 0
+	
+	func:Load(self){
+		return(frombyte(fsreadf(self.confile)))
+	}
+	
+	func:Save(self){
+		fswritef(self.confile,tobyte(self))
+	}
+	
+	func:Print(self){
+		print("confile :",self.confile)
+		print("theme :",self.theme)
+		print("fontype :",self.fontype)
+		print("fontsize :",self.fontsize)
+	}
+}
+
+conf = UIConfData()
+conf.theme = "theme1"
+conf.Save()

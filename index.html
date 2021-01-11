@@ -28,6 +28,17 @@
     <link rel="stylesheet" href="assets/css/pace-theme-minimal.css" />
 
 
+    <link rel="stylesheet" href="" info="code-css">
+
+    <script>
+        LoadDemoCode2();
+
+    </script>
+
+
+
+
+
 </head>
 
 <body class="home">
@@ -36,53 +47,50 @@
     <a id="ScrollTopBtn" class="btn btn-info btn-lg " href="#"><i class="fa fa fa-arrow-up"></i></a>
 
 
-    <div class="navbar  navbar-expand-lg navbar-inverse navbar-fixed-top navbar-dark">
+    <div class="navbar navbar-expand-lg navbar-fixed-top">
         <a class="navbar-brand" href="index.html"><img src="assets/images/Logo.png" alt=""></a>
 
         <p id="tobasite-version" class="nav-item version"></p>
 
-        <div class="container">
+        <button class="navbar-toggler btn btn-outline-info collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa fa-bars fa-2x"></i></span>
+        </button>
 
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbarResponsive" style="">
-                <ul class="navbar-nav">
+        <div id="navbarResponsive" class="navbar-collapse collapse">
 
+            <div class="navbar-nav ml-auto">
 
-                </ul>
-            </div>
+                <a href="mailto:damien.culot@tobalang.org" class="nav-item nav-link text-info">Contact</a>
+                <a href="https://github.com/TobaMan/TobaLang/pulls" class="nav-item nav-link text-info">Pull requests</a>
+                <a href="https://github.com/TobaMan/TobaLang/issues" class="nav-item nav-link text-info">Issues</a>
 
-            <a href="https://github.com/TobaMan/TobaLang/pulls" class="nav-item nav-link">Pull requests</a>
-            <a href="https://github.com/TobaMan/TobaLang/issues" class="nav-item nav-link">Issues</a>
-
-            <div class="dropdown">
-                <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Themes
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Cerulean">Cerulean</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Cosmo">Cosmo</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Cyborg">Cyborg</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Darkly">Darkly</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Flatly">Flatly</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Literia">Literia</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Lux">Lux</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Materia">Materia</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Minty">Minty</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Sandstone">Sandstone</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Simplex">Simplex</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Sketchy">Sketchy</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Slate">Slate</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Solar">Solar</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Spacelab">Spacelab</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="Superhero">Superhero</a>
-                    <a href="#" class="dropdown-item change-style-menu-item" rel="United">United</a>
+                <div class="dropdown">
+                    <a class="nav-item nav-link dropdown-toggle text-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Themes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Cerulean">Cerulean</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Cosmo">Cosmo</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Cyborg">Cyborg</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Darkly">Darkly</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Flatly">Flatly</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Literia">Literia</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Minty">Minty</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Sandstone">Sandstone</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Sketchy">Sketchy</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Slate">Slate</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Solar">Solar</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Spacelab">Spacelab</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="Superhero">Superhero</a>
+                        <a href="#" class="dropdown-item change-style-menu-item" rel="United">United</a>
+                    </div>
                 </div>
+                <a class="btn btn-outline-info" href="documentation.html">DOCUMENTATION</a>
+
             </div>
-            <a class="btn btn-outline-info" style="padding-left:10px" href="documentation.html">DOCUMENTATION</a>
 
         </div>
+
     </div>
 
 
@@ -90,20 +98,19 @@
     <header id="head">
         <div class="container">
 
-            <h1 class="text-center lead"><strong>TOBA</strong>
+            <h1 class="text-center main-text1"><strong>TOBA</strong>
                 <small>PROGRAMMING LANGUAGE</small>
             </h1>
-            <h4 class="lead text-center font-italic"><span style="color:#11a55d;font-weight: bold">optimize</span>( _productivity ) </h4>
-            <a class="btn btn-default btn-lg" role="button" style="margin-top: 20px" href="#more-info"><i class="fa fa-ellipsis-h"></i></a>
-            <a class="btn btn-default btn-lg" role="button" style="margin-top: 20px" href="#getting-started">GETTING STARTED</a>
+            <p><span class="main-text2"><span style="color: rgb(65, 168, 95);"><em>Optimize</em></span><em>(_productivity)</em></span></p>
+            <a class="btn btn-outline-info btn-lg" role="button" style="color:white;margin-top: 20px" href="#more-info"><i class="fa fa-ellipsis-h"></i></a>
+            <a class="btn btn-outline-info btn-lg" role="button" style="color:white;margin-top: 20px" href="#getting-started">GETTING STARTED</a>
             <a class="btn btn-info btn-lg" role="button" style="margin-top: 20px" href="#download">DOWNLOAD TOBA</a>
 
         </div>
 
-        <!--        <i class="fa fa-caret-down"></i>-->
-
     </header>
     <!-- /Header -->
+
 
     <!-- Intro -->
     <div class="container text-center">
@@ -174,10 +181,24 @@
                 <p style="text-align: justify;">These libraries contain Toba files. These source files are recognized by your system because they have the extension &quot;.to&quot; and are executable by double-clicking on them.</p>
                 <p><br></p>
                 <p><br></p>
-
             </li>
             <li class="list-group-item">
                 <h4><span class="badge badge-info">2</span> Create your first script</h4>
+
+                <br>
+                <h5>Hello world</h5>
+                <p>Create an empty file that you can name &quot;helloworld.to&quot;. Open this file and write the following code:</p>
+                <pre><code class="language-swift">print( "hello world !" )</code></pre>
+                <p><i>You can also test the examples below.</i></p>
+                <br>
+                <div id="gstart-code">
+
+                    <!-- All exemples codes here ...-->
+
+                </div>
+                <br>
+                <p>To obtain more sample code, you can browse the documentation as well as the contents of the &quot;Tests&quot; folder at the root of the Toba executable. &nbsp;</p>
+
             </li>
             <li class="list-group-item">
                 <h4><span class="badge badge-info">3</span> Run the code</h4>
@@ -193,7 +214,24 @@
     <div id="download" class="jumbotron top-space">
         <div class="container">
 
-            <p>This language is available under a free and permissive license, but needs <a class="btn btn-info btn-sm" role="button" href="https://www.paypal.com/donate?hosted_button_id=99KGC8DTE9HWY">financial support</a> to sustain its continued improvements. In addition to maintenance and stability there are many desirable features yet to be added. If your company is using Toba, please consider reaching out.</p>
+            <p>The Toba kernel is distributed for free without the source code. For this reason, the Toba kernel is considered freeware. It nevertheless offers you the possibility to use your work in commercial applications.</p><br>
+            <p>All source files distributed in the installer (Tests, examples, libraries) are open source and subject to the free and permissive MIT license. Toba is free, but needs <a class="btn btn-info btn-sm" role="button" href="https://www.paypal.com/donate?hosted_button_id=99KGC8DTE9HWY">financial support</a> to sustain its continued improvements. In addition to maintenance and stability there are many desirable features yet to be added. If your company is using Toba, please consider reaching out.</p>
+
+            <a class="dropdown-toggle" data-toggle='collapse' data-target="#toba-evolution">The future evolution of Toba</a>
+            <br>
+            <div style="padding-left:20px" class="collapse" id="toba-evolution">
+                <p>Version 1.0.1 will be dedicated to make available a Linux version of Toba (cross-compiler included).</p>
+                <div class="list-group">
+                    <a class="list-group-item nohover">Add more mathematical operators and builtins functions</a>
+                    <a class="list-group-item nohover">To use default arguments in the execution variables</a>
+                    <a class="list-group-item nohover">To obtain an increased performance in the execution of the loops ( x10 ) see more with a graphic card management.</a>
+                    <a class="list-group-item nohover">Multi-threaded management of functions</a>
+                    <a class="list-group-item nohover">Dictionary management</a>
+                    <a class="list-group-item nohover">An opening to other platforms (os, material)</a>
+                </div>
+            </div>
+            <br><br>
+            <p>Developers who recognize themselves in the philosophy of this programming language come forward so that we can make it evolve together. Any company willing to support this project will be welcome.</p>
             <br>
 
 
@@ -217,9 +255,9 @@
                         <i class="fa fa fa-windows fa-3x"></i>
                         <span class="df download-vname"></span>
                         <span class="dfn">Windows setup</span>
-                        <span id="windowsnote" style="margin-left: auto;margin-right: auto;width: 60%"></span>
-
                     </div>
+                    <br>
+                    <p id="windowsnote" style="margin-left: auto;margin-right: auto;width: 95%"></p><br>
 
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                         <button id="win-arch32" class="sel-arch btn btn-outline-info active" type="button">
@@ -236,9 +274,9 @@
                         <i class="fa fa fa-linux fa-3x"></i>
                         <span class="df download-vname"></span>
                         <span class="dfn">Linux setup</span>
-                        <span id="linuxnote" style="margin-left: auto;margin-right: auto;width: 60%"></span>
-
                     </div>
+                    <br>
+                    <p id="linuxnote" style="margin-left: auto;margin-right: auto;width: 95%"></p><br>
 
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                         <button id="lin-arch32" class="sel-arch btn btn-outline-info active" type="button">
@@ -255,9 +293,9 @@
                         <i class="fa fa fa-apple fa-3x"></i>
                         <span class="df download-vname"></span>
                         <span class="dfn">Apple setup</span>
-                        <span id="applenote" style="margin-left: auto;margin-right: auto;width: 60%"></span>
-
                     </div>
+                    <br>
+                    <p id="applenote" style="margin-left: auto;margin-right: auto;width: 95%"></p><br>
 
                     <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
                         <button id="mac-arch32" class="sel-arch btn btn-outline-info active" type="button">
@@ -274,9 +312,9 @@
                         <i class="fa fa fa-file-text fa-3x"></i>
                         <span class="df download-vname"></span>
                         <span class="dfn">Release Note</span>
-                        <span id="releasenote" style="margin-left: auto;margin-right: auto;width: 60%"></span>
-
                     </div>
+                    <br>
+                    <p id="releasenote" style="margin-left: auto;margin-right: auto;width: 95%"></p><br>
                 </a>
             </div>
 
@@ -379,7 +417,7 @@
 
     </footer>
 
-
+    <script src="assets/js/prism.js"></script>
 </body>
 
 </html>

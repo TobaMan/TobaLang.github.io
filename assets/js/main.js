@@ -1,5 +1,17 @@
 function set_theme(theme) {
     $('link[title="main"]').attr('href', theme);
+    ChangeCodeTheme(theme);
+}
+
+function ChangeCodeTheme(theme) {
+    theme = theme.split(".")[2];
+    SetCodeBlackTheme();
+    var black = ["Cyborg", "Darkly", "Slate", "Solar", "Superhero"];
+    if (black.includes(theme)) {
+        SetCodeBlackTheme();
+    } else {
+        SetCodeWhiteTheme();
+    }
 }
 
 /* When a theme-change item is selected, update theme */
@@ -100,8 +112,10 @@ function BuildDownloadSetup(button, os, arch) {
         if (arch === 32) architecture = "x86";
         if (arch === 64) architecture = "x64";
     }
-    var base = "https://github.com/TobaMan/TobaLang/releases/download/";
-    var filename = "Fake_Toba_" + version + "_" + architecture + "_Setup" + ext
+    //var base = "https://github.com/TobaMan/TobaLang/releases/download/";
+    var base = "assets/data/setup/";
+    //var filename = "Fake_Toba_" + version + "_" + architecture + "_Setup" + ext
+    var filename = "Toba_" + version + "_" + architecture + "_Setup" + ext
     var download = base + version + "/" + filename;
     $(button).attr('onclick', "window.location.href='" + download + "';");
 }
@@ -167,9 +181,9 @@ function IsDocPage() {
 function AddDocNewItem(newlist) {
     var splitter = "::";
     var extra = '<span style="margin-left:4px" class="badge badge-primary">New</span>';
-    if (!IsDocPage()) {
-        return;
-    }
+    //    if (!IsDocPage()) {
+    //        return;
+    //    }
     $("h1, h2").each(function () {
         var text = $(this).text();
         for (let i = 0; i < newlist.length; i++) {
@@ -183,8 +197,76 @@ function AddDocNewItem(newlist) {
     InitDocToc();
 }
 
+function ResponsiveDocToc() {
+    var win = $(window);
+    if (win.width() <= 758) {
+        //console.log("small device");
+        $(".drop-toc").append('<nav id="toc"></nav>');
+    } else {
+        //console.log("large device");
+        $("#navleft").append('<nav id="toc"></nav>');
+    }
+}
+
+function ApplyDocumentationStyle() {
+
+    $('tr').css("width", "100%");
+    $('td').css("width", "100%");
+    $('table').css("table-layout", "fixed");
+    $('table').css("width", "100%");
+    $('table').css("table-layout", "fixed");
+
+    $('table').css("border", "solid var(--primary) 1px");
+    $('table').css("border-left", "solid var(--primary) 1px");
+    $('table').css("border-right", "solid var(--primary) 1px");
+    $('table').css("border-top", "solid var(--primary) 1px");
+    $('table').css("border-bottom", "solid var(--primary) 1px");
+    $('table').css("background", "none");
+    //$('body').css("font - size ", "0.7 em ");
+
+    $('body').css("font-family", "");
+    $('p').css("font-family", "");
+    $('span').css("font-family", "");
+
+
+}
+
+function AddCode(name) {
+    var begin = "<br>\
+                <h5 class='dropdown-toggle' data-toggle='collapse' data-target='#code-" + name + "'>" + name + "</h5>\
+                <pre class='codeviewer collapse show' id='code-" + name + "'><code style='border-color: var(--secondary)' class='language-swift'>";
+    var end = "</code></pre>";
+
+    jQuery.get("assets/data/code/" + name + ".to", function (code) {
+        code = begin + code + end;
+        $("#gstart-code").append(code);
+    });
+}
+
+
+function SetCodeBlackTheme() {
+    $('link[info="code-css"]').attr('href', "assets/css/prism_black.css");
+}
+
+function SetCodeWhiteTheme() {
+    $('link[info="code-css"]').attr('href', "assets/css/prism_light.css");
+}
+
+function LoadDemoCode(democode) {
+    for (var i = 0; i < democode.length; i++) {
+        AddCode(democode[i]);
+    }
+}
+
+function LoadDemoCode2() {
+    AddCode("ClassConfig");
+    AddCode("DrawSphere");
+}
 
 $(document).ready(function () {
+
+    ApplyDocumentationStyle();
+    ResponsiveDocToc();
 
     var theme = GetCurrentTheme();
     if (theme) {
@@ -193,16 +275,16 @@ $(document).ready(function () {
         set_theme("assets/css/bootstrap.min.Slate.css");
     }
 
-
     jQuery.get("assets/data/data", function (datav) {
         data = JSON.parse(datav);
         cur_version = data["version"];
         newlist = data["newlist"];
         allversions = data["allversions"];
+        democode = data["democode"];
         InitCurrentVersion();
+        //LoadDemoCode(democode);
         BuildDownloadVersion();
         AddDocNewItem(newlist);
-
     });
 
 });

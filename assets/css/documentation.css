@@ -1,3 +1,13 @@
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-left: 30%;
+    width: 65%;
+}
+
 p {
     margin: 0;
 }
@@ -7,17 +17,13 @@ tr {
     /*    font-weight: bold;*/
     filter: invert(0.70);
     transition: all .4s ease-in;
-    /*    border-color: var(--primary);*/
-    /*    transform-origin: 0 0*/
 }
-
 
 tr:hover {
 
     filter: invert(1);
-    font-weight: bold;
-    transition: all .4s ease-in;
-    /*    text-transform: uppercase;*/
+    transform: scale(1.02);
+    border-color: var(--primary);
 
 }
 
@@ -38,16 +44,6 @@ td {
     /*    border-color: red;*/
 }
 
-body {
-    margin-left: 30%;
-    width: 65%;
-    /*    -webkit-filter: "blur(4px)"*/
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
@@ -56,23 +52,22 @@ html {
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    /*    width: 12px;*/
     width: 8px;
+    height: 8px;
 }
 
 *::-webkit-scrollbar-track {
     background: var(--bg-transparent);
-    /*    background: #121214;*/
 }
 
 *::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    /*    border: 1px solid var(--primary);*/
-    /*    background-color: var(--primary);*/
     background-color: var(--secondary);
 }
 
+
 #navleft {
+    display: block;
     position: fixed;
     width: 25%;
     padding-right: 20px;
@@ -102,5 +97,71 @@ html {
     position: relative;
     top: 10px;
     left: 6px;
-    z-index: 1;
+    z-index: 99;
+}
+
+
+#navtop {
+    display: none;
+    background: inherit;
+    position: fixed;
+    height: 82px;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    z-index: 99;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.drop-toc {
+    background-color: rgba(var(--rgb), 0.8);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid var(--secondary);
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    body {
+        margin-left: 0%;
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    #toc {
+        overflow-y: auto;
+    }
+
+    #navleft {
+        display: none;
+    }
+
+    .tobalogo {
+        display: none;
+    }
+
+    .tobadoc {
+        display: none;
+    }
+
+    #navtop {
+        display: block;
+        background: inherit;
+        position: fixed;
+        height: 82px;
+        left: 0;
+        top: 0px;
+        z-index: 99;
+    }
+
+    .doc-content {
+        overflow-x: auto;
+        margin-top: 85px;
+    }
+
 }
