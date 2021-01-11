@@ -114,7 +114,6 @@ function BuildDownloadSetup(button, os, arch) {
     }
     //var base = "https://github.com/TobaMan/TobaLang/releases/download/";
     var base = "assets/data/setup/";
-    //var filename = "Fake_Toba_" + version + "_" + architecture + "_Setup" + ext
     var filename = "Toba_" + version + "_" + architecture + "_Setup" + ext
     var download = base + version + "/" + filename;
     $(button).attr('onclick', "window.location.href='" + download + "';");

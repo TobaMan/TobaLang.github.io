@@ -3,13 +3,10 @@
 	
 	"democode":["DrawSphere", "ClassConfig"],
 	
-	"newlist":["Syntax", "Operations", "Variables", "Loops"],
+	"newlist":[],
 	
 	"allversions":{
 	
-		"1.0.0":["13/12/20",0],
-		"1.0.1":["13/12/21",0],
-		"1.0.2":["13/12/22",0],
-		"1.0.3":["13/12/23",0]
+		"1.0.0":["11/01/21",0]
 	}
 }
