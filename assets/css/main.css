@@ -38,13 +38,12 @@ html {
     background-size: cover;
     background-position: center;
 
-    height: 100vh;
+    height: 90vh;
     padding-top: 15%;
 
     text-align: center;
     color: white;
     font-family: "Open sans", Helvetica, Arial src:url(../fonts/OpenSans-Regular.ttf) format("truetype");
-    /*    font-weight: 300;*/
 }
 
 .main-text1 {
@@ -349,3 +348,15 @@ img.pull-left {
 .widget-simplenav a {
     margin: 0 5px;
 }
+
+/*
+@media screen and (max-width: 768px) {
+    #head {
+        padding-top: 0;
+    }
+
+    .main-text2 {
+        display: none;
+    }
+}
+*/
