@@ -3,10 +3,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin-left: 30%;
-    width: 65%;
-}
 
 p {
     margin: 0;
@@ -15,15 +11,19 @@ p {
 /*code contrast*/
 tr {
     /*    font-weight: bold;*/
-    filter: invert(0.70);
-    transition: all .4s ease-in;
+    /*    filter: invert(0.70);*/
+    /*    transition: all .4s ease-in;*/
+    /*    border-color: var(--primary);*/
+
 }
 
 tr:hover {
 
-    filter: invert(1);
-    transform: scale(1.02);
-    border-color: var(--primary);
+    font-weight: bold;
+
+    /*    filter: invert(1);*/
+    /*    transform: scale(1.02);*/
+    /*    border-color: var(--primary);*/
 
 }
 
@@ -31,18 +31,18 @@ tr:hover {
 
 th,
 td {
-    padding: 15px;
-    text-align: left;
+    padding: 2px;
+
 }
 
+/*
 table,
 th,
 td {
-    /*    border: 1px solid black;*/
     border-color: var(--primary);
     background-color: transparent;
-    /*    border-color: red;*/
 }
+*/
 
 /* Works on Firefox */
 * {
@@ -67,10 +67,10 @@ td {
 
 
 #navleft {
-    display: block;
+    display: inline-block;
     position: fixed;
-    width: 25%;
-    padding-right: 20px;
+    width: 22%;
+    /*    width: auto;*/
     top: 0px;
     left: 0px;
     height: 100%;
@@ -86,6 +86,7 @@ td {
 }
 
 .tobadoc {
+    display: none;
     position: relative;
     top: 6px;
     left: 4px;
@@ -123,13 +124,17 @@ td {
     border: 1px solid var(--secondary);
 }
 
+.doc-content {
+    position: absolute;
+    width: auto;
+    left: 22%;
+}
+
 
 @media screen and (max-width: 768px) {
 
 
     body {
-        margin-left: 0%;
-        width: 100%;
         font-size: 0.7em;
     }
 
@@ -160,8 +165,12 @@ td {
     }
 
     .doc-content {
+        position: relative;
+        left: 0%;
         overflow-x: auto;
         margin-top: 85px;
     }
+
+
 
 }

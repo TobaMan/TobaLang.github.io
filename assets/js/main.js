@@ -197,24 +197,33 @@ function AddDocNewItem(newlist) {
     InitDocToc();
 }
 
+function TableFitWindow() {
+    $('tr').css("width", "100%");
+    $('td').css("width", "100%");
+    $('table').css("width", "100%");
+    $('table').css("table-layout", "fixed");
+}
+
 function ResponsiveDocToc() {
     var win = $(window);
     if (win.width() <= 758) {
         //console.log("small device");
         $(".drop-toc").append('<nav id="toc"></nav>');
+
     } else {
         //console.log("large device");
         $("#navleft").append('<nav id="toc"></nav>');
+
+        TableFitWindow();
     }
 }
 
 function ApplyDocumentationStyle() {
 
-    $('tr').css("width", "100%");
-    $('td').css("width", "100%");
-    $('table').css("table-layout", "fixed");
-    $('table').css("width", "100%");
-    $('table').css("table-layout", "fixed");
+    var adapt_content = false;
+    if (adapt_content) {
+        TableFitWindow();
+    }
 
     $('table').css("border", "solid var(--primary) 1px");
     $('table').css("border-left", "solid var(--primary) 1px");
@@ -227,7 +236,6 @@ function ApplyDocumentationStyle() {
     $('body').css("font-family", "");
     $('p').css("font-family", "");
     $('span').css("font-family", "");
-
 
 }
 
@@ -262,6 +270,7 @@ function LoadDemoCode2() {
     AddCode("ClassConfig");
     AddCode("DrawSphere");
 }
+
 
 $(document).ready(function () {
 
