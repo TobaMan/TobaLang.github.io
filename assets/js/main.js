@@ -197,6 +197,13 @@ function AddDocNewItem(newlist) {
     InitDocToc();
 }
 
+function InitTable() {
+    $('tr').css("width", "");
+    $('td').css("width", "");
+    $('table').css("width", "");
+    $('table').css("table-layout", "");
+}
+
 function TableFitWindow() {
     $('tr').css("width", "100%");
     $('td').css("width", "100%");
@@ -209,6 +216,8 @@ function ResponsiveDocToc() {
     if (win.width() <= 758) {
         //console.log("small device");
         $(".drop-toc").append('<nav id="toc"></nav>');
+
+        InitTable();
 
     } else {
         //console.log("large device");
