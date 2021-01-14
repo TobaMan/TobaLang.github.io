@@ -45,6 +45,7 @@ html {
     content: "";
     background: url(../images/bg_header.png) no-repeat;
     background-size: cover;
+    background-position: center;
     position: absolute;
     top: 0px;
     right: 0px;
