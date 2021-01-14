@@ -32,48 +32,48 @@ html {
 }
 
 
-/* Header */
 #head {
-
-
-    background: #181015 url(../images/bg_header.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.35;
-
-
-    /*
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .35)), url(../images/bg_header.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.35;
-*/
-
-
-
+    position: relative;
     height: 90vh;
-    padding-top: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+#head::before {
+    content: "";
+    background: url(../images/bg_header.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.35;
+}
+
+.head-content {
+    position: relative;
     text-align: center;
     color: white;
-    font-family: "Open sans", Helvetica, Arial src:url(../fonts/OpenSans-Regular.ttf) format("truetype");
 }
 
 .main-text1 {
     /*    margin-bottom: 25%;*/
     padding-top: 10%;
-    font-family: "Open sans", Helvetica, Arial;
     font-size: 44px;
-    text-shadow: 0 2px 0 rgba(55, 55, 55, 0.6);
+    /*    text-shadow: 0 2px 0 rgba(55, 55, 55, 0.6);*/
     color: white;
     /*    line-height: 1.15em;*/
+
 }
 
 .main-text2 {
     /*    margin-bottom: 25%;*/
-    font-family: "Open sans", Helvetica, Arial;
+    /*    font-family: "Open sans", Helvetica, Arial;*/
     font-size: 30px;
-    text-shadow: 0 2px 0 rgba(55, 55, 55, 0.6);
+    /*    text-shadow: 0 2px 0 rgba(55, 55, 55, 0.6);*/
 }
 
 
