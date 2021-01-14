@@ -34,9 +34,22 @@ html {
 
 /* Header */
 #head {
-    background: #181015 url(../images/bg_header.jpg) no-repeat;
+
+
+    background: #181015 url(../images/bg_header.png) no-repeat;
     background-size: cover;
     background-position: center;
+    opacity: 0.35;
+
+
+    /*
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .35)), url(../images/bg_header.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;
+*/
+
+
 
     height: 90vh;
     padding-top: 15%;
