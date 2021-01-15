@@ -354,26 +354,19 @@ img.pull-left {
 
 @media screen and (max-width: 768px) {
     #head {
-        min-height: 420px;
-        padding-top: 160px;
+        /*        min-height: 420px;*/
+        /*        padding-top: 160px;*/
     }
-
-    /*
-    #head .lead {
-        font-size: 34px;
-    }
-*/
 
     .main-text1 {
-        font-size: 40px;
-        /*        padding-bottom: 25%;*/
-        margin-bottom: 35%;
-        margin-top: -10%;
+        font-size: 30px;
+        /*        margin-top: -40%;*/
+        /*        margin-top: -60%;*/
+        /*        margin-bottom: 5%;*/
     }
 
     .button-header-sm {
         display: inline;
-        /*        margin-bottom: 25%;*/
     }
 
     .button-header-lg {
