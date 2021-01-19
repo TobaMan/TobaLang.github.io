@@ -225,7 +225,8 @@ function ResponsiveDocToc() {
         //console.log("small device");
         $(".drop-toc").append('<nav id="toc"></nav>');
 
-        InitTable();
+        //InitTable();
+        TableFitWindow();
 
     } else {
         //console.log("large device");
@@ -275,7 +276,7 @@ function ApplyTobaDocCodeStyle() {
         tobacode.css("white-space", "pre");
         tobacode.css("line-height", "75%");
         tobacode.css("padding", "20px");
-        //tobacode.css("overflow", "auto");
+        tobacode.css("overflow", "auto");
         //tobacode.css("font-size", "0.75em");
         //tobacode.css("font-family", "consolas");
 
@@ -291,6 +292,7 @@ function ApplyTobaDocCodeStyle() {
         tobacode.css("white-space", "pre");
         tobacode.css("line-height", "75%");
         tobacode.css("padding", "20px");
+        tobacode.css("overflow", "auto");
     });
 }
 
