@@ -15,20 +15,33 @@ html {
     color: var(--primary);
 }
 
+
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    /*    width: 12px;*/
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--bg-transparent);
+    /*    background: var(--bg-transparent);*/
+    background: inherit;
 }
 
 *::-webkit-scrollbar-thumb {
-    border-radius: 4px;
+    border-radius: 0;
     background-color: var(--secondary);
+}
+
+/*
+*::-webkit-scrollbar-button {
+    background: var(--primary);
+    width: 4px;
+    height: 4px;
+}
+*/
+
+*::-webkit-scrollbar-corner {
+    background: inherit;
 }
 
 
