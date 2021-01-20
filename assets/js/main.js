@@ -205,6 +205,13 @@ function AddDocNewItem(newlist) {
     InitDocToc();
 }
 
+function RestoreScrollBar() {
+    $("::-webkit-scrollbar").css("all", "unset");
+    //    ::-webkit-scrollbar {
+    //        all: unset;
+    //    }
+}
+
 function InitTable() {
     $('tr').css("width", "");
     $('td').css("width", "");
@@ -305,46 +312,8 @@ function ApplyDocumentationStyle() {
         TableFitWindow();
     }
 
-    //    $('table').css("border", "solid var(--primary) 1px");
-    //    $('table').css("border-left", "solid var(--primary) 1px");
-    //    $('table').css("border-right", "solid var(--primary) 1px");
-    //    $('table').css("border-top", "solid var(--primary) 1px");
-    //    $('table').css("border-bottom", "solid var(--primary) 1px");
-    //
-    //    $('td').css("border", "solid var(--primary) 1px");
-    //    $('td').css("border-left", "solid var(--primary) 1px");
-    //    $('td').css("border-right", "solid var(--primary) 1px");
-    //    $('td').css("border-top", "solid var(--primary) 1px");
-    //    $('td').css("border-bottom", "solid var(--primary) 1px");
-
-    //    $('table').removeAttr("width");
-    //    $('td').removeAttr("width");
-    //    $('tr').removeAttr("width");
-    //    $('table').removeAttr("valign");
-    //    $('td').removeAttr("valign");
-    //    $('tr').removeAttr("valign");
-    //    $('table').removeAttr("border");
-    //    $('td').removeAttr("border");
-    //    $('tr').removeAttr("border");
-    //    $('table').removeAttr("cellspacing");
-    //    $('td').removeAttr("cellspacing");
-    //    $('tr').removeAttr("cellspacing");
-    //    $('table').removeAttr("cellpadding");
-    //    $('td').removeAttr("cellpadding");
-    //    $('tr').removeAttr("cellpadding");
-
-    //    $('table').css("width", "100vw");
-    //    $('table').css("table-layout", "fixed");
-
-
     $('p').css("background", "none");
-    $('span').css("background", "none");
-    //
-    //
-    //    $('.NoteStyle').css("border", "solid rgba(var(--primary), 0.5) 1px");
-    //    $('.NoteStyle').css("background", "rgba(var(--primary), 0.3)");
-    //    $('.NoteStyle').css("background-color", "rgba(var(--primary), 0.3)");
-    //$('.NoteStyle').css("background", "var(--info)");
+
     $('.NoteStyle').css("border", "solid rgba(23, 162, 184,0.3) 1px");
     $('.NoteStyle').css("background", "rgba(23, 162, 184,0.1)");
     //$('.NoteStyle').css("opacity", "0.3");
@@ -365,14 +334,6 @@ function ApplyDocumentationStyle() {
     $('td').css("border-top", "solid rgba(0, 0, 0, 0.35) 1px");
     $('td').css("border-bottom", "solid rgba(0, 0, 0, 0.35) 1px");
 
-    //
-    //        $('table').css("background-color", "none");
-    //        $('td').css("background-color", "none");
-    //$('td').css("background", "none");
-
-
-
-    //$('body').css("font - size ", "0.7 em ");
 
     $('body').css("font-family", "");
     $('p').css("font-family", "");
