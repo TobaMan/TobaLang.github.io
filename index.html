@@ -32,6 +32,7 @@
 
     <script>
         LoadDemoCode2();
+        UsersStats_goatcounter();
 
     </script>
 
@@ -60,11 +61,11 @@
 
             <div class="navbar-nav ml-auto">
 
-                <a data-goatcounter-click="Contact" href="mailto:damien.culot@tobalang.org" class="nav-item nav-link text-info">Contact</a>
-                <a data-goatcounter-click="Pull requests" href="https://github.com/TobaMan/TobaLang/pulls" class="nav-item nav-link text-info">Pull requests</a>
-                <a data-goatcounter-click="Issues" href="https://github.com/TobaMan/TobaLang/issues" class="nav-item nav-link text-info">Issues</a>
+                <a id="id-Contact" href="mailto:damien.culot@tobalang.org" class="nav-item nav-link text-info">Contact</a>
+                <a id="id-Pull-requests" href="https://github.com/TobaMan/TobaLang/pulls" class="nav-item nav-link text-info">Pull requests</a>
+                <a id="id-Issues" href="https://github.com/TobaMan/TobaLang/issues" class="nav-item nav-link text-info">Issues</a>
 
-                <div data-goatcounter-click="Themes" class="dropdown">
+                <div id="id-Themes" class="dropdown">
                     <a class="nav-item nav-link dropdown-toggle text-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Themes
                     </a>
@@ -85,7 +86,7 @@
                         <a href="#" class="dropdown-item change-style-menu-item" rel="United">United</a>
                     </div>
                 </div>
-                <a class="btn btn-outline-info" href="documentation.html">DOCUMENTATION</a>
+                <a id="id-documentation" class="btn btn-outline-info" href="documentation.html">DOCUMENTATION</a>
             </div>
         </div>
     </div>
@@ -94,20 +95,14 @@
     <header id="head">
         <div class="container head-content">
 
-            <h1 class=" text-center main-text1"><strong>TOBA</strong>
+            <h1 class="text-center main-text1"><strong>TOBA</strong>
                 <small>PROGRAMMING LANGUAGE</small>
             </h1>
             <!--            <p><span class="main-text2"><span style="color: rgb(65, 168, 95);"><em>Optimize</em></span><em>(_productivity)</em></span></p>-->
 
-<!--
-            <a class="btn btn-outline-info btn-sm button-header-sm" role="button" href="#more-info"><i class="fa fa-ellipsis-h"></i></a>
-            <a data-goatcounter-click="getting started" class="btn btn-outline-info btn-sm button-header-sm" role="button" href="#getting-started">GETTING STARTED</a>
-            <a data-goatcounter-click="download toba" class="btn btn-info btn-sm button-header-sm" role="button" href="#download">DOWNLOAD TOBA</a>
--->
-
-            <a class="btn btn-outline-info btn-lg button-header-lg" role="button" href="#more-info"><i class="fa fa-ellipsis-h"></i></a>
-            <a class="btn btn-outline-info btn-lg button-header-lg" role="button" href="#getting-started">GETTING STARTED</a>
-            <a class="btn btn-info btn-lg button-header-lg" role="button" href="#download">DOWNLOAD TOBA</a>
+            <a id="id-moreinfo" class="btn btn-outline-info btn-lg button-header-lg" role="button" href="#more-info"><i class="fa fa-ellipsis-h"></i></a>
+            <a id="id-started" class="btn btn-outline-info btn-lg button-header-lg" role="button" href="#getting-started">GETTING STARTED</a>
+            <a id="id-download" class="btn btn-info btn-lg button-header-lg" role="button" href="#download">DOWNLOAD TOBA</a>
 
         </div>
 
@@ -173,7 +168,7 @@
         <br>
 
         <ul class="list-group">
-            <li class="list-group-item">
+            <li id="id-install" class="list-group-item">
                 <h4><span class="badge badge-info">1</span> Install Toba on your computer</h4>
                 <br>
 
@@ -182,7 +177,7 @@
                 <p style="text-align: justify;">The Toba directory contains the binary of the language used to execute the code <em>&quot;Toba.exe&quot;</em>, a directory named <em>&quot;modules&quot;</em> containing the standard libraries or those you created yourself (ex: libMyLib), a &quot;tests&quot; folder for performing unit tests. </p>
                 <p><br></p>
             </li>
-            <li class="list-group-item">
+            <li id="id-create" class="list-group-item">
                 <h4><span class="badge badge-info">2</span> Create your first script</h4>
 
                 <br>
@@ -200,7 +195,7 @@
                 <p>To obtain more sample code, you can browse the documentation as well as the contents of the &quot;Tests&quot; folder at the root of the Toba executable. &nbsp;</p>
 
             </li>
-            <li class="list-group-item">
+            <li id="id-run" class="list-group-item">
                 <h4><span class="badge badge-info">3</span> Run the code</h4>
                 <br>
 
@@ -218,9 +213,9 @@
         <div class="container">
 
             <p>The Toba kernel is distributed for free without the source code. For this reason, the Toba kernel is considered freeware. It nevertheless offers you the possibility to use your work in commercial applications.</p><br>
-            <p>All source files distributed in the installer (Tests, examples, libraries) are open source and subject to the free and permissive MIT license. Toba is free, but needs <a class="btn btn-info btn-sm" role="button" href="https://www.paypal.com/donate?hosted_button_id=99KGC8DTE9HWY">financial support</a> to sustain its continued improvements. In addition to maintenance and stability there are many desirable features yet to be added. If your company is using Toba, please consider reaching out.</p>
+            <p>All source files distributed in the installer (Tests, examples, libraries) are open source and subject to the free and permissive MIT license. Toba is free, but needs <a id="id-donate" class="btn btn-info btn-sm" role="button" href="https://www.paypal.com/donate?hosted_button_id=99KGC8DTE9HWY">financial support</a> to sustain its continued improvements. In addition to maintenance and stability there are many desirable features yet to be added. If your company is using Toba, please consider reaching out.</p>
 
-            <a class="dropdown-toggle" data-toggle='collapse' data-target="#toba-evolution">The future evolution of Toba</a>
+            <a id="id-future" class="dropdown-toggle" data-toggle='collapse' data-target="#toba-evolution">The future evolution of Toba</a>
             <br>
             <div style="padding-left:20px" class="collapse" id="toba-evolution">
                 <p>The very first versions will be dedicated to make available a Linux version of Toba (cross-compiler included).</p>
@@ -238,7 +233,7 @@
             <br>
 
 
-            <div class="dropdown">
+            <div id="id-version" class="dropdown">
                 <button id="version-info" class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Version
                 </button>
