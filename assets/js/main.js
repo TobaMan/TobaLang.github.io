@@ -432,10 +432,10 @@ $(document).ready(function () {
         newlist = data["newlist"];
         allversions = data["allversions"];
         democode = data["democode"];
-        InitCurrentVersion();
-        //LoadDemoCode(democode);
-        BuildDownloadVersion();
-        if (IsDocPage()) {
+        if (!IsDocPage()) { //index.html
+            InitCurrentVersion();
+            BuildDownloadVersion();
+        } else { //documentation.html
             AddDocNewItem(newlist);
         }
     });
