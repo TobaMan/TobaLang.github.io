@@ -1,19 +1,19 @@
 function UsersStats_goatcounter() {
 
-    $('#id-Contact').attr("data-goatcounter-click", "");
-    $('#id-Pull-requests').attr("data-goatcounter-click", "");
-    $('#id-Issues').attr("data-goatcounter-click", "");
-    $('#id-Themes').attr("data-goatcounter-click", "");
-    $('#id-documentation').attr("data-goatcounter-click", "");
-    $('#id-moreinfo').attr("data-goatcounter-click", "");
-    $('#id-started').attr("data-goatcounter-click", "");
-    $('#id-download').attr("data-goatcounter-click", "");
-    $('#id-install').attr("data-goatcounter-click", "");
-    $('#id-create').attr("data-goatcounter-click", "");
-    $('#id-run').attr("data-goatcounter-click", "");
-    $('#id-donate').attr("data-goatcounter-click", "");
-    $('#id-future').attr("data-goatcounter-click", "");
-    $('#id-version').attr("data-goatcounter-click", "");
+    $('#id-Contact').attr("data-goatcounter-click", "id-Contact");
+    $('#id-Pull-requests').attr("data-goatcounter-click", "id-Pull-requests");
+    $('#id-Issues').attr("data-goatcounter-click", "id-Issues");
+    $('#id-Themes').attr("data-goatcounter-click", "id-Themes");
+    $('#id-documentation').attr("data-goatcounter-click", "id-documentation");
+    $('#id-moreinfo').attr("data-goatcounter-click", "id-moreinfo");
+    $('#id-started').attr("data-goatcounter-click", "id-started");
+    $('#id-download').attr("data-goatcounter-click", "id-download");
+    $('#id-install').attr("data-goatcounter-click", "id-install");
+    $('#id-create').attr("data-goatcounter-click", "id-create");
+    $('#id-run').attr("data-goatcounter-click", "id-run");
+    $('#id-donate').attr("data-goatcounter-click", "id-donate");
+    $('#id-future').attr("data-goatcounter-click", "id-future");
+    $('#id-version').attr("data-goatcounter-click", "id-version");
 }
 
 function set_theme(theme) {
@@ -224,7 +224,7 @@ function AddDocNewItem(newlist) {
 }
 
 function RestoreScrollBar() {
-//    $("::-webkit-scrollbar").css("all", "unset");
+    //$("::-webkit-scrollbar").css("all", "unset");
     //    ::-webkit-scrollbar {
     //        all: unset;
     //    }
