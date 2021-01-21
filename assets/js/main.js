@@ -403,7 +403,7 @@ function LoadDemoCode2() {
 
 
 $(window).on('load', function () {
-
+    UsersStats_goatcounter();
 });
 
 
