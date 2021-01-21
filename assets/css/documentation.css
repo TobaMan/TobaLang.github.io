@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    display: none;
+}
+
 
 /*
 p {
@@ -34,7 +38,6 @@ tr {
     font-weight: bold;
 
 }
-
 
 
 
