@@ -224,7 +224,7 @@ function AddDocNewItem(newlist) {
 }
 
 function RestoreScrollBar() {
-    $("::-webkit-scrollbar").css("all", "unset");
+//    $("::-webkit-scrollbar").css("all", "unset");
     //    ::-webkit-scrollbar {
     //        all: unset;
     //    }
@@ -403,7 +403,7 @@ function LoadDemoCode2() {
 
 
 $(window).on('load', function () {
-    //UsersStats_goatcounter();
+    UsersStats_goatcounter();
 });
 
 
