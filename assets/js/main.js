@@ -1,19 +1,19 @@
 function UsersStats_goatcounter() {
 
-    $('#id-Contact').prop("data-goatcounter-click", "id-Contact");
-    $('#id-Pull-requests').prop("data-goatcounter-click", "id-Pull-requests");
-    $('#id-Issues').prop("data-goatcounter-click", "id-Issues");
-    $('#id-Themes').prop("data-goatcounter-click", "id-Themes");
-    $('#id-documentation').prop("data-goatcounter-click", "id-documentation");
-    $('#id-moreinfo').prop("data-goatcounter-click", "id-moreinfo");
-    $('#id-started').prop("data-goatcounter-click", "id-started");
-    $('#id-download').prop("data-goatcounter-click", "id-download");
-    $('#id-install').prop("data-goatcounter-click", "id-install");
-    $('#id-create').prop("data-goatcounter-click", "id-create");
-    $('#id-run').prop("data-goatcounter-click", "id-run");
-    $('#id-donate').prop("data-goatcounter-click", "id-donate");
-    $('#id-future').prop("data-goatcounter-click", "id-future");
-    $('#id-version').prop("data-goatcounter-click", "id-version");
+    $('#id-Contact').data("data-goatcounter-click", "id-Contact");
+    $('#id-Pull-requests').data("data-goatcounter-click", "id-Pull-requests");
+    $('#id-Issues').data("data-goatcounter-click", "id-Issues");
+    $('#id-Themes').data("data-goatcounter-click", "id-Themes");
+    $('#id-documentation').data("data-goatcounter-click", "id-documentation");
+    $('#id-moreinfo').data("data-goatcounter-click", "id-moreinfo");
+    $('#id-started').data("data-goatcounter-click", "id-started");
+    $('#id-download').data("data-goatcounter-click", "id-download");
+    $('#id-install').data("data-goatcounter-click", "id-install");
+    $('#id-create').data("data-goatcounter-click", "id-create");
+    $('#id-run').data("data-goatcounter-click", "id-run");
+    $('#id-donate').data("data-goatcounter-click", "id-donate");
+    $('#id-future').data("data-goatcounter-click", "id-future");
+    $('#id-version').data("data-goatcounter-click", "id-version");
 }
 
 function set_theme(theme) {
