@@ -199,17 +199,22 @@ function InitDocToc() {
     });
 }
 
+//function IsDocPage() {
+//    var winame = document.location.href.match(/[^\/]+$/)[0]
+//    return winame.includes("documentation");
+//}
+
 function IsDocPage() {
-    var winame = document.location.href.match(/[^\/]+$/)[0]
-    return winame.includes("documentation");
+    if (document.title === "Toba - Documentation") {
+        return true;
+    }
+    return false;
 }
+
 
 function AddDocNewItem(newlist) {
     var splitter = "::";
     var extra = '<span style="margin-left:4px" class="badge badge-primary">New</span>';
-    //    if (!IsDocPage()) {
-    //        return;
-    //    }
     $("h1, h2").each(function () {
         var text = $(this).text();
         for (let i = 0; i < newlist.length; i++) {
@@ -401,7 +406,6 @@ function LoadDemoCode2() {
 }
 
 
-
 $(window).on('load', function () {
 
 });
@@ -417,8 +421,10 @@ $(document).ready(function () {
         set_theme("assets/css/bootstrap.min.Superhero.css");
     }
 
-    ApplyDocumentationStyle();
-    ResponsiveDocToc();
+    if (IsDocPage()) {
+        ApplyDocumentationStyle();
+        ResponsiveDocToc();
+    }
 
     jQuery.get("assets/data/data", function (datav) {
         data = JSON.parse(datav);
@@ -429,7 +435,9 @@ $(document).ready(function () {
         InitCurrentVersion();
         //LoadDemoCode(democode);
         BuildDownloadVersion();
-        AddDocNewItem(newlist);
+        if (IsDocPage()) {
+            AddDocNewItem(newlist);
+        }
     });
 
 });
