@@ -55,8 +55,11 @@ function GetVerNewList(vername) {
 }
 
 
+
 var cur_version = 0;
 var allversions = 0;
+var them_name = ["Cerulean", "Cosmo", "Cyborg", "Darkly", "Flatly", "Literia", "Minty", "Sandstone", "Sketchy", "Slate", "Solar", "Spacelab", "Superhero", "United"];
+var them_bkcol = ["#fff", "#fff", "#060606", "#222", "#fff", "#fff", "#fff", "#fff", "#fff", "#272b30", "#002b36", "#fff", "#2b3e50", "#fff"];
 var no_download = "The setup program for this platform is not available for this version.";
 var black_code_col = "rgba(0, 0, 0, 0.25)";
 var white_code_col = "rgba(245, 242, 240, 0.25)";
@@ -408,10 +411,30 @@ function LoadDemoCode2() {
 
 $(window).on('load', function () {
     if (IsDocPage()) {
-        $("body").fadeIn("slow");
+        const preloader = document.querySelector('#loading-div');
+        const fadeEffect = setInterval(() => {
+            if (!preloader.style.opacity) {
+                preloader.style.opacity = 1;
+            }
+            if (preloader.style.opacity > 0.0) {
+                preloader.style.opacity -= 0.1;
+            } else {
+                clearInterval(fadeEffect);
+            }
+        }, 200);
     }
 
 });
+
+function gotodoc() {
+    var col = $("body").css("background-color");
+    var tcol = $("body").css("color");
+    var tfont = $("body").css("font-family");
+    localStorage.theme_col = col;
+    localStorage.theme_tcol = tcol;
+    localStorage.theme_tfont = tfont;
+    window.location = "documentation.html";
+}
 
 
 $(document).ready(function () {
@@ -440,6 +463,7 @@ $(document).ready(function () {
             BuildDownloadVersion();
         } else { //documentation.html
             AddDocNewItem(newlist);
+
         }
     });
 

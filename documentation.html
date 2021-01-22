@@ -12,14 +12,23 @@
 
     <link rel="stylesheet" href="" title="main">
 
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.write("<style>body { background: " + localStorage.theme_col + "; }</style>");
+        document.write("<style>#loading-div { background: " + localStorage.theme_col + "; }</style>");
+        document.write("<style>#loader-text { color: " + localStorage.theme_tcol + "; }</style>");
+        document.write("<style>#loader-text { font-family: " + localStorage.theme_tfont + "; }</style>");
 
-    <script src="assets/js/bootstrap-toc.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/scrollup.js"></script>
+    </script>
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" async></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" async></script>
+
+    <script src="assets/js/bootstrap-toc.js" async></script>
+    <script src="assets/js/main.js" async></script>
+    <script src="assets/js/scrollup.js" async></script>
 
     <!-- <link rel="stylesheet" href="docx.css"> -->
     <link rel="stylesheet" href="assets/css/documentation.css">
@@ -31,9 +40,17 @@
 
     <link rel="stylesheet" href="" info="code-css">
 
+
+
+
 </head>
 
 <body data-spy="scroll" data-target="#toc" class="home scroll">
+
+    <div id="loading-div">
+        <img id="loader" src="assets/images/loader.gif" alt="">
+        <p id="loader-text">Loading ...</p>
+    </div>
 
     <a id="ScrollTopBtn" class="btn btn-info btn-lg " href="#"><i class="fa fa fa-arrow-up"></i></a>
 
