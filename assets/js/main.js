@@ -54,6 +54,16 @@ function GetVerNewList(vername) {
     return allversions[vername][1];
 }
 
+function IsLargeDevice() {
+    return !($(window).width() <= 758);
+}
+
+function IsDocPage() {
+    if (document.title === "Toba - Documentation") {
+        return true;
+    }
+    return false;
+}
 
 
 var cur_version = 0;
@@ -202,19 +212,6 @@ function InitDocToc() {
     });
 }
 
-//function IsDocPage() {
-//    var winame = document.location.href.match(/[^\/]+$/)[0]
-//    return winame.includes("documentation");
-//}
-
-function IsDocPage() {
-    if (document.title === "Toba - Documentation") {
-        return true;
-    }
-    return false;
-}
-
-
 function AddDocNewItem(newlist) {
     var splitter = "::";
     var extra = '<span style="margin-left:4px" class="badge badge-primary">New</span>';
@@ -253,8 +250,7 @@ function TableFitWindow() {
 }
 
 function ResponsiveDocToc() {
-    var win = $(window);
-    if (win.width() <= 758) {
+    if (!IsLargeDevice()) {
         //console.log("small device");
         $(".drop-toc").append('<nav id="toc"></nav>');
 
@@ -434,6 +430,21 @@ function gotodoc() {
     localStorage.theme_tcol = tcol;
     localStorage.theme_tfont = tfont;
     window.location = "documentation.html";
+}
+
+function showtoc() {
+    if (IsLargeDevice()) {
+        if ($("#navleft").is(":visible")) {
+            $(".drop-toc").hide();
+            $("#navleft").hide("slow", function () {
+                $(".doc-content").css("left", "0");
+            });
+        } else {
+            $("#navleft").show("slow", function () {
+                $(".doc-content").css("left", "22%");
+            });
+        }
+    }
 }
 
 
